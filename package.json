@@ -1,0 +1,22 @@
+{
+  "name": "asyncfilewalk",
+  "version": "1.0.0",
+  "description": "AsyncFileWalk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirokiosame/AsyncFileWalk.git"
+  },
+  "author": "Hiroki Osame",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hirokiosame/AsyncFileWalk/issues"
+  },
+  "homepage": "https://github.com/hirokiosame/AsyncFileWalk#readme",
+  "dependencies": {
+    "walk": "^2.3.9"
+  }
+}
