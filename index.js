@@ -18,6 +18,7 @@ class FileTraverser extends EventEmitter {
 		this.excludes = [];
 
 		if (opts.excludes) {
+
 			if (opts.excludes instanceof Array) {
 				this.excludes.push(...opts.excludes);
 			} else {
@@ -25,8 +26,7 @@ class FileTraverser extends EventEmitter {
 			}
 		}
 
-		this.excludes = new Set(this.excludes.map(path.resolve));
-
+		this.excludes = new Set(this.excludes.map(excl => path.resolve(excl)));
 
 		this.files = new Set();
 		this.dirs = new Set();
